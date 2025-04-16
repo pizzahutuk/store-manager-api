@@ -153,9 +153,8 @@ workflows:
           filters:
             branches:
               only:
-                - yin5925
-                # - develop
-                # - master
+                - develop
+                - master
       - terraform/init_and_plan:
           name: terraform_plan
           context:
@@ -178,9 +177,8 @@ workflows:
           filters:
             branches:
               only:
-                - yin5925
-                # - master
-                # - develop
+                - master
+                - develop
       - terraform/init_and_apply:
           name: terraform_apply
           context:
